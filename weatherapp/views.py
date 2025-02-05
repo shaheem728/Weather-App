@@ -23,8 +23,11 @@ def index(request):
     data = requests.get(city_url).json()
     count = 1
     search_items = data.get("items")
-    image_url = search_items[1]['link']
     try:
+        if search_items and len(search_items) > 0:
+            image_url = search_items[1]['link']
+        else:
+            image_url = None  # Fallback in case no images are found
         data = requests.get(url, PARAMS).json()
         description = data['weather'][0]['description']
         icon = data['weather'][0]['icon']

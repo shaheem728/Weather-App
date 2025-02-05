@@ -50,12 +50,12 @@ input, .btn ::placeholder{
   padding: .5rem;
   border-radius: 10px;
   outline: none;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.84);
 }
 .btn{
   padding: .5rem 1rem;
-  /* background-color:#F0EBCC ;
-  color:#04009A ; */
+  background-color:#F0EBCC ;
+  color:#04009A ; 
   border:2px solid #04009A ;
   cursor:pointer;
   transition:.3s;
@@ -65,7 +65,7 @@ input, .btn ::placeholder{
 }
 .btn:hover{
   transform: translateY(-3px);
-  background-color:rgb(5,41,51);
+  background-color:rgb(0, 40, 51);
   color:#fff ;
 }
 .weather{
@@ -126,12 +126,12 @@ input, .btn ::placeholder{
   color:rgb(5,41,51);
   font-size: 20px;
 }
-@media only screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .container{
    width:80%; 
   } 
 }
-@media only screen and (max-width: 700px) {
+@media  screen and (max-width: 700px) {
   .weather {
     flex-direction:column;
     height:auto;
@@ -153,9 +153,9 @@ input, .btn ::placeholder{
 
 }
 
-/* 
 
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200'); */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200'); 
 
 body  {
   background-image: url('https://images.pexels.com/photos/3008509/pexels-photo-3008509.jpeg?auto=compress&cs=tinysrgb&w=1600');

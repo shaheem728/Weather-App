@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
-<body {% if error_message or image_url == None %}
+<body {% if error_message %}
 style="background-image: url('/static/image/weather.jpg');" 
 {% else %}
 style="background-image: url('{{ image_url }}');"

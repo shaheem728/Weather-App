@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body {% if error_message %}
-style="background-image: url('/static/image/weather.jpg');" 
+style="background-image: url('/staticfiles_build/image/weather.jpg');background-repeat: no-repeat;background-size: cover;" 
 {% else %}
 style="background-image: url('{{ image_url }}');"
 {% endif %}>

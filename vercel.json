@@ -20,7 +20,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "backend/wsgi.py"
+        "dest": "weather/wsgi.py"
       }
     ]
   }

@@ -6,8 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
-<body class="body-image" {% if error_message %}
-style="background-image: url('/staticfiles_build/image/weather.jpg');background-repeat: no-repeat;background-size: cover;" 
+<body {% if error_message %}
+style="background-image: url('/staticfiles_build/image/weather.jpg');background-repeat: no-repeat;background-size:100% 100% ;" 
 {% else %}
 style="background-image: url('{{ image_url }}');background-repeat: no-repeat;background-size:100% 100%"
 {% endif %}>
@@ -17,7 +17,7 @@ style="background-image: url('{{ image_url }}');background-repeat: no-repeat;bac
     <form method="POST">
         {% csrf_token %}
         <input type="text" name="city" id="city" placeholder="Enter City">
-        <button type="submit" class="btn">search</button>
+        <button type="submit" class="submit-btn">search</button>
     </form>
     {% if error_message %}
     <div class="Weather">

@@ -3,8 +3,6 @@
   --off-white: #e5e5e5;
   --transp-white-1: rgba(255, 255, 255, 0.25);
   --transp-white-2: rgba(255, 255, 255, 0.18);
-  --blue-1: #62b8f5;
-  --blue-2: #4475ef;
 }
 *{
 margin:0;
@@ -36,7 +34,7 @@ border-radius: 10px;
 color:rgb(5,41,51);
 height: 600px;
 }
-input, .btn ::placeholder{
+input{
 background-color: transparent;
 color: black;
 padding: .5rem;
@@ -44,19 +42,17 @@ border-radius: 10px;
 outline: none;
 border: 1px solid white;
 }
-.btn{
-padding: .5rem 1rem;
+.submit-btn{
+background-color: transparent;
 border:2px solid #04009A ;
 cursor:pointer;
 transition:.3s;
 font-weight: bold;
 color:black;
-background-color: transparent;
 border-radius: 0.3em;
 }
-.btn:hover{
+.submit-btn:hover{
 transform: translateY(-3px);
-background-color:rgb(7, 191, 243);
 color:#fff ;
 }
 

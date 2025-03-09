@@ -44,6 +44,7 @@ border: 1px solid white;
 }
 .submit-btn{
 background-color: transparent;
+padding: .5rem 1rem;
 border:2px solid #04009A ;
 cursor:pointer;
 transition:.3s;
